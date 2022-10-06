@@ -5,21 +5,28 @@
   <body>
     <?php
 
-$multiplicando= 2;
-$multiplicador;
-
-for ($multiplicador=1; $multiplicador <=10 ; $multiplicador++) { 
-  $acum = 0;
+function multplicacion($multiplicador,$multiplicando) {
+  $acum=0;
   for($i=0; $i < $multiplicador; $i++){
         $acum += $multiplicando;
       }
-  
-	echo "$multiplicando" . " X " . $multiplicador . " = ". "   $acum" ;
-	echo "<br>";
-
-
- 
+  echo $multiplicador."=";
+      echo $acum;
 }
+
+
+
+ for($valores = 1; $valores<=10; $valores++) {
+  
+   $val = $valores;
+  echo "<br>";
+   echo $val." x ";
+   
+  multplicacion(10,$valores);
+   
+ }
+
+
 
    ?> 
 
